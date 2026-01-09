@@ -34,9 +34,9 @@ variable "identity_token" {
   ephemeral = true
 }
 
-variable "client_id" { 
-  type = string
-}
+# variable "client_id" { 
+#   type = string
+# }
 
 variable "subscription_id" { 
   type = string 
