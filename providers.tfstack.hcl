@@ -25,7 +25,7 @@ provider "azurerm" "this" {
 
     use_oidc = true
     oidc_token = var.identity_token
-    client_id = var.client_id
+    # client_id = var.client_id
     subscription_id = var.subscription_id
     tenant_id = var.tenant_id
   }
