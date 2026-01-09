@@ -7,10 +7,7 @@ resource "azurerm_resource_group" "main" {
   location = var.location
 }
 
-module "sql_server" {
-  source  = "Azure/avm-res-dbformysql-flexibleserver/azurerm"
-  version = "0.1.0"
-
+resource "azurerm_mysql_flexible_server" "main" {
   name                   = local.name
   location               = azurerm_resource_group.main.location
   resource_group_name    = azurerm_resource_group.main.name
